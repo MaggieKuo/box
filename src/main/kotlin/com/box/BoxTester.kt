@@ -40,12 +40,12 @@ open class BaseBox(override var length: Float,
     }
 }
 
-class Box3(): BaseBox(20f, 11f, 9){
+class Box3(): BaseBox(23f, 14f, 13){
     companion object {
         val BOX_NAME = "Box3"
     }
 }
-class Box5(): BaseBox(15f, 18f, 10){
+class Box5(): BaseBox(39.5f, 27.5f, 23){
     companion object {
         val BOX_NAME = "Box5"
     }

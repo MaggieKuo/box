@@ -23,12 +23,10 @@ public class BoxTester {
 
     private static float enterFloat(Scanner scanner, String info){
         System.out.println(info);
-//        System.out.print(info);
         return scanner.nextFloat();
     }
 
     private static int enterInt(Scanner scanner, String info){
-//        System.out.print(info);
         System.out.println(info);
         return scanner.nextInt();
     }}
