@@ -99,8 +99,17 @@
       <file leaf-file-name="BoxTester.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/box/BoxTester.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+            <state relative-caret-position="160">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Extensions.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/box/Extensions.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -561,6 +570,7 @@
     <option name="jreName" value="1.8 (1)" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="56" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="828" />
@@ -854,7 +864,7 @@
       <workItem from="1546024434139" duration="2976000" />
       <workItem from="1546048772075" duration="712000" />
       <workItem from="1546049564332" duration="1482000" />
-      <workItem from="1546054118205" duration="1673000" />
+      <workItem from="1546054118205" duration="5902000" />
     </task>
     <task id="LOCAL-00001" summary="fix box size">
       <created>1546023968907</created>
@@ -870,7 +880,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546054517818</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="when">
+      <created>1546068210798</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546068210798</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -906,7 +923,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17608000" />
+    <option name="totallyTimeSpent" value="21837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -918,7 +935,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="828" extended-state="0" />
+    <frame x="395" y="45" width="1440" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -927,12 +944,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20509194" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25884017" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.5473833" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.25884017" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.21745351" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.21745351" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.39321074" />
       <window_info anchor="bottom" id="Tail" order="7" />
       <window_info anchor="right" id="Database" order="3" />
@@ -1017,7 +1034,8 @@
     </ignored-roots>
     <MESSAGE value="fix box size" />
     <MESSAGE value="extensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="extensions" />
+    <MESSAGE value="when" />
+    <option name="LAST_COMMIT_MESSAGE" value="when" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1479,8 +1497,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/box/BoxTester.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+        <state relative-caret-position="160">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>

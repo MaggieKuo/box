@@ -7,7 +7,6 @@ fun main(args: Array<String>) {
     val length = scanner.input("Please enter object's length: "){scanner.nextFloat()}
     val width = scanner.input("Please enter object's width: "){scanner.nextFloat()}
     val height = scanner.input("Please enter object's width: ", {scanner.nextInt()})
-
     var box = Box.getInstance(length, width, height)
     println(box?.getName())
 }
