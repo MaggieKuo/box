@@ -4,12 +4,9 @@ import java.util.*
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
-    println("Please enter object's length: ")
-    val length = scanner.nextFloat()
-    println("Please enter object's width: ")
-    val width = scanner.nextFloat()
-    println("Please enter object's height: ")
-    val height = scanner.nextInt()
+    val length = scanner.input("Please enter object's length: ", {scanner.nextFloat()})
+    val width = scanner.input("Please enter object's width: ", {scanner.nextFloat()})
+    val height = scanner.input("Please enter object's width: ", {scanner.nextInt()})
 
     if (Box3().validate(length, width, height))
         println(Box3.BOX_NAME)
