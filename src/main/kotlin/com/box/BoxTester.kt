@@ -8,12 +8,10 @@ fun main(args: Array<String>) {
     val width = scanner.input("Please enter object's width: ", {scanner.nextFloat()})
     val height = scanner.input("Please enter object's width: ", {scanner.nextInt()})
 
-    if (Box3().validate(length, width, height))
-        println(Box3.BOX_NAME)
-    else if (Box5().validate(length, width, height))
-        println(Box5.BOX_NAME)
-    else
-        println("Sorry.")
+    when{
+        Box3().validate(length, width, height) -> println(Box3.BOX_NAME)
+        Box5().validate(length, width, height) -> println(Box5.BOX_NAME)
+    }
 }
 
 interface Box{
