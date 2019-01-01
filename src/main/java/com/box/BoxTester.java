@@ -7,18 +7,12 @@ public class BoxTester {
         Scanner scanner = new Scanner(System.in);
         float length = enterFloat(scanner, "Please enter object's length: ");
         float width = enterFloat(scanner, "Please enter object's width: ");
-        int height = enterInt(scanner, "Please enter object's height: ");
-        Box3 box3 = new Box3();
-        if (box3.validate(length, width, height)){
-            System.out.println(box3.getBoxName());
-        }else{
-            Box5 box5 = new Box5();
-            if (box5.validate(length, width, height)){
-                System.out.println(box5.getBoxName());
-            }else{
-                System.out.println("Sorry.");
-            }
-        }
+//        int height = enterInt(scanner, "Please enter object's height: ");
+        float height = enterFloat(scanner, "Please enter object's height: ");
+        boolean rotate = enterYN(scanner, "Can the object to rotate? ");
+
+        BaseBox box = Box.getInstanse(length, width, height, rotate);
+        System.out.println(box==null ? "empty" : box.getName());
     }
 
     private static float enterFloat(Scanner scanner, String info){
@@ -29,4 +23,15 @@ public class BoxTester {
     private static int enterInt(Scanner scanner, String info){
         System.out.println(info);
         return scanner.nextInt();
-    }}
+    }
+
+    private static boolean enterYN(Scanner scanner, String info){
+        String result;
+        do{
+            System.out.println(info + "(y/N)");
+            result = scanner.next();
+        } while("y".equals(result) || "N".equals(result));
+
+        return "y".equals(result);
+    }
+}
