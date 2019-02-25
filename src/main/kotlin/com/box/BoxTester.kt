@@ -1,7 +1,6 @@
 package com.kotlin
 
 import java.util.*
-import javax.lang.model.type.NullType
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
@@ -10,16 +9,22 @@ fun main(args: Array<String>) {
     val height = scanner.input("Please enter object's height: ", {scanner.nextInt()})
 
     val box = Box.getInstance(length, width, height)
-    println(box?.getName() ?:"empty")
+    println(box?.name() ?:"empty")
 }
 
 class Box{
     companion object {
-        fun getInstance(length: Float, width : Float, height : Int): BaseBox? =
-            when{
-                Box3().validate(length, width, height) -> Box3()
-                Box5().validate(length, width, height) -> Box5()
-                else -> null
+        var boxs = mutableListOf(Box3(), Box5())
+
+        fun getInstance(length: Float, width : Float, height : Int): BaseBox? {
+                boxs.forEach {
+                    if (it.validate(length, width, height)) return it
+                }
+                return null
+//                when{
+//                Box3.instance.validate(length, width, height) -> Box3.instance
+//                Box5.instance.validate(length, width, height) -> Box5.instance
+//                else -> null
         }
     }
 }
@@ -28,8 +33,9 @@ interface IBox{
     var length: Float
     var width: Float
     val height: Int
+    val price: Int
     fun validate(length: Float, width : Float, height : Int): Boolean
-    fun getName(): String
+    fun name(): String
 }
 
 open abstract class BaseBox(override var length: Float,
@@ -48,11 +54,21 @@ open abstract class BaseBox(override var length: Float,
     }
 }
 
-class Box3(): BaseBox(23f, 14f, 13){
-    override fun getName()= "Box3"
+class Box5(): BaseBox(23f, 14f, 13){
+    override var price: Int = 0
+        get() = 65
+    override fun name() = "小型便利箱"
+//    companion object {
+//        val instance by lazy(LazyThreadSafetyMode.SYNCHRONIZED, {Box5()})
+//    }
 }
 
-class Box5(): BaseBox(39.5f, 27.5f, 23){
-    override fun getName()= "Box5"
+class Box3(): BaseBox(39.5f, 27.5f, 23){
+    override fun name() = "90cm便利箱"
+    override var price: Int = 0
+        get() = 110
+//    companion object {
+//        val instance by lazy(LazyThreadSafetyMode.SYNCHRONIZED, {Box3()})
+//    }
 }
 
